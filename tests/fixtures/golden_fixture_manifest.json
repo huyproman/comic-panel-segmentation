@@ -1,0 +1,1048 @@
+{
+  "schema_version": "2.0.0",
+  "description": "Strengthened Golden Fixture Manifest with Itemized Artifact Provenance",
+  "total_fixtures": 16,
+  "local_bundle_relative_root": ".local_fixtures",
+  "fixtures": [
+    {
+      "fixture_id": "FIX_COMIC_01",
+      "page_id": "3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3_image.png",
+          "sha256": "49fd5df6166427c15e18df46bb65dbf4c00ff5cf226d02bb0c04a73aaf896f3f",
+          "size_bytes": 359852,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3_raw_mask.png",
+          "sha256": "c58a6ac147b52fb3d773e1dc6a9a070e4579532df0d52f2eea0d6c3077ac17d1",
+          "size_bytes": 1297,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3_processed_mask.png",
+          "sha256": "9c2a5fa09afe0b91c560c5b7104c0dde5fdca53998916f20e58d028de6fde09f",
+          "size_bytes": 3195,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3_final_mask.png",
+          "sha256": "6d73ed32071b5ead4bbc53c08440070f9b5f92ba73cb27c7bf157b30c9205953",
+          "size_bytes": 1124,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_20_jpg.rf.39cca8b7dde4d28a8c19e55865fed3a3_true_mask.png",
+          "sha256": "98eee9549f55ef01041d192d8e6e17a225cca7519d9430fe4027dd70867e9481",
+          "size_bytes": 1033,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_02",
+      "page_id": "3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a_image.png",
+          "sha256": "98d3ac374593ce5294f5455620434eacbbb2aadb40c4b754102d77a3504618f0",
+          "size_bytes": 335431,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a_raw_mask.png",
+          "sha256": "1959649c758745cb8cb67cf1fa17ccb1be34fd51fcf8d26a35d5666d38125e70",
+          "size_bytes": 1241,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a_processed_mask.png",
+          "sha256": "db4646d7ddc3927bb9c41d0826f2b3454e6247fb53c76236dc824adede49512e",
+          "size_bytes": 4032,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a_final_mask.png",
+          "sha256": "42e9cab4bfb5c350ab0c376a3ae9c71058bd47c163026e93fbeba95e255531c2",
+          "size_bytes": 1130,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a.png",
+          "local_fixture_rel_path": "comic/3-amazing-spider-man_page_6_jpg.rf.5b1ae68e5321dfb6ce3ee2f8338ef65a_true_mask.png",
+          "sha256": "20e5a80f4088ef107cafcc6633271e41cd4c72dc3ee60e27afc9952696f969a2",
+          "size_bytes": 1042,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_03",
+      "page_id": "Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2_image.png",
+          "sha256": "3349842dab1f4535e056f7fec67c403431a18b1eb985e23314231d5265e91e2d",
+          "size_bytes": 370986,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2_raw_mask.png",
+          "sha256": "7778b0dbb12d2a0dbd201f43a235cbee7595c94e11b7eaada4e117291ccd9589",
+          "size_bytes": 1573,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2_processed_mask.png",
+          "sha256": "046c938f4ca160c4c0006ae260a4a2e35e597a0711e458791ef0437dc023e304",
+          "size_bytes": 3011,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2_final_mask.png",
+          "sha256": "08001de95ac6be2515bc24c3a6b6835ba074565047f5a007987793620da31f92",
+          "size_bytes": 1382,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_17_jpg.rf.9c1ff04ccdbd4b94657cfd0e145a5bc2_true_mask.png",
+          "sha256": "43967d40a16d309723dad4406fa714f60d201259ae67ee6f1d5cf14a5989e582",
+          "size_bytes": 1092,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_04",
+      "page_id": "Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe_image.png",
+          "sha256": "661f849832d4183b74a7702790fa1d32f2802c2a4fae8a2b9df096949b8bef68",
+          "size_bytes": 341888,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe_raw_mask.png",
+          "sha256": "c3efa3bd9109c6aadb46624c44f55ace3c379f511b2941bdd94d6c60755a3f86",
+          "size_bytes": 1421,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe_processed_mask.png",
+          "sha256": "af8e6176eccc26cad9f759a8e932ef51b7f3a7b3197b4e98e8a41bec919f2206",
+          "size_bytes": 3075,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe_final_mask.png",
+          "sha256": "c7a0c6fd8bf01682fe692034984d39c73337bad6e826a900cf4535572638f2b5",
+          "size_bytes": 1245,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe.png",
+          "local_fixture_rel_path": "comic/Avengers-World-002-2014-Digital-Zone-Empire-_page_9_jpg.rf.8a40a54d5d7859afb77e56867478ccbe_true_mask.png",
+          "sha256": "1857545260704a714b6a613d7c741f2e7445ac68800eacbcc677a0ac73c4886f",
+          "size_bytes": 1094,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_05",
+      "page_id": "Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371_image.png",
+          "sha256": "80f3842c1997ac8c48e4c9a50da74cba6faf5a6fe2cdd9a9cf2d0f20de946e97",
+          "size_bytes": 383934,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371_raw_mask.png",
+          "sha256": "3dcf660b0eaee3c537554804bbfb28f6e99aa97d9c05b217d74928e24bf89c26",
+          "size_bytes": 1492,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371_processed_mask.png",
+          "sha256": "203ad27cbc68399a39def5a830583cdb28ebe93dff4dc0e47bdc4d9462017cf3",
+          "size_bytes": 3095,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371_final_mask.png",
+          "sha256": "eb7c6ad300cede1e67472408af5f5580d7fa62c69abfa2f63a6a6e53cbc4e99b",
+          "size_bytes": 1350,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_14_jpg.rf.43070adcda39ad10748f0dbb8b16b371_true_mask.png",
+          "sha256": "fce573e17cc2c25b13d8e6b6ed451d9678e89949deb171d48a716785681299f7",
+          "size_bytes": 1118,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_06",
+      "page_id": "Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b_image.png",
+          "sha256": "14abe93953f8f6c3f8ffb516403436224105f56650683c53005662e75bccaf99",
+          "size_bytes": 414647,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b_raw_mask.png",
+          "sha256": "f8dc00ad9bc64892f31459d3ff2ab25ad790443bc2372e7c2536284f3ad02726",
+          "size_bytes": 1198,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b_processed_mask.png",
+          "sha256": "a59b9b56fff6f4d67a9b0043784ef341741705210f2f6695ad581fe722ca59e8",
+          "size_bytes": 2322,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b_final_mask.png",
+          "sha256": "1cd87d31c082ea3d60fc69d3c0e0d92380bee5ce340467f1fcd33650a4d8e61d",
+          "size_bytes": 1147,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_21_jpg.rf.cb657b5127f2715d858bd00a890e7a4b_true_mask.png",
+          "sha256": "595ee9e93e0dfe7ad9e1236b3d31187a9129714911291805949829969c81585a",
+          "size_bytes": 1100,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_07",
+      "page_id": "Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6_image.png",
+          "sha256": "e955ab7bc0f6fd7b5dfd920ad6529327c4be6b01a6d702dc147da988089a169e",
+          "size_bytes": 399475,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6_raw_mask.png",
+          "sha256": "61a4f0a8305657c13f51cf5b23b243168ab5edf935c94697be6f7e88525fe146",
+          "size_bytes": 1521,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6_processed_mask.png",
+          "sha256": "7b7b3a5bdfff14839e7c770c6852b60c6815d2a536df01944047ece95916720b",
+          "size_bytes": 2495,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6_final_mask.png",
+          "sha256": "42915027fe454aca6c4bdbe9a4d2f22b370782a9f975d93883517ac9a040243e",
+          "size_bytes": 1238,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6.png",
+          "local_fixture_rel_path": "comic/Avengers-World-006-2014-Digital-Zone-Empire-_page_8_jpg.rf.b1fc783be2432bf22c9387947c517df6_true_mask.png",
+          "sha256": "145ebaa5b9fb6b75721fcccdfb377cf4c268b104c9db8246a85389cf39688a22",
+          "size_bytes": 1079,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_COMIC_08",
+      "page_id": "Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f",
+      "dataset": "Comic",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/image/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f.png",
+          "local_fixture_rel_path": "comic/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f_image.png",
+          "sha256": "40276b99ace3a27208a105c66b4d2ead82d868766eae5e282e9358ad13306c67",
+          "size_bytes": 316010,
+          "role": "model_inference_input",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_PRIMARY_SOURCE"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/pred_mask/pred_mask_raw_Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f.png",
+          "local_fixture_rel_path": "comic/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f_raw_mask.png",
+          "sha256": "d7835f161258c1ffb920a9d50da281cbef4b9ee4ebb85990d6d94c402d698e2c",
+          "size_bytes": 1202,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/processed_mask/pred_mask_raw_Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f.png",
+          "local_fixture_rel_path": "comic/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f_processed_mask.png",
+          "sha256": "2127b93a5223dc735b6af0963601303fd3f27ca99d21f64ff7a15974a0308e85",
+          "size_bytes": 2283,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/final_mask/pred_mask_raw_Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f.png",
+          "local_fixture_rel_path": "comic/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f_final_mask.png",
+          "sha256": "487ca4866c5e1387f3da5a4469a2376dce543501e384cad2301ad638dbd61b7c",
+          "size_bytes": 1101,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/comic_preds/unetpp_comic_pred/true_mask/true_mask_Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f.png",
+          "local_fixture_rel_path": "comic/Avengers-World-007-2014-Digital-Zone-Empire-_page_3_jpg.rf.12284adaf342fa96dca7db80db3e794f_true_mask.png",
+          "sha256": "5608822666886b09c37e8f906e6d54574441260e0f88577a0b43020c5d9518fc",
+          "size_bytes": 1064,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_01",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0_raw_mask.png",
+          "sha256": "1b03fa89b5f3821d21a76130d363c20246beb9aa9a4aac9751248dd90efed8b1",
+          "size_bytes": 947,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0_processed_mask.png",
+          "sha256": "82318bff97b6487477445e491897ab3bc8cc672a60abdd3bf1e7ec04be516b36",
+          "size_bytes": 1841,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0_final_mask.png",
+          "sha256": "6b6f9cf3699a3ad9522c460dd4fafac3dab3bff7961bbcd54e1e82886ef422dd",
+          "size_bytes": 908,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_116_jpg.rf.1140b7f7802faa68ffe1402e3c9cf4b0_true_mask.png",
+          "sha256": "0fa1ee8a1fef9e6f53b2f382cbf4270afafa188f13cd98adf7bd3af7fe3349a4",
+          "size_bytes": 911,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_02",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5_raw_mask.png",
+          "sha256": "88b188f7004f3aaf7e559c582d24401f2429849fbea0e70dccdaef305c327759",
+          "size_bytes": 991,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5_processed_mask.png",
+          "sha256": "27b1013a8d801b900f50830a5028c0503c2a286003aa7bbea189dc19a649cbca",
+          "size_bytes": 1788,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5_final_mask.png",
+          "sha256": "cbac5432a82a91da9c779aff217f3f9b2e569555110940104182a8549174ce22",
+          "size_bytes": 919,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_118_jpg.rf.8bbd0fb6be27bf24f2e12237de7ca9c5_true_mask.png",
+          "sha256": "e7fb8c92ac994a641e779236bba10463420b9b79fe6be78c48db09a8bdab4287",
+          "size_bytes": 899,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_03",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524_raw_mask.png",
+          "sha256": "c7897d1f0aa1526e616f9f044a217bf9f723ab7729ef8db6c3f7952b545b5028",
+          "size_bytes": 1193,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524_processed_mask.png",
+          "sha256": "dd5a954e4e7eeb7b31ffef5e5b19ad23a04ca34ebcd2ef6c68bac69684195fee",
+          "size_bytes": 1387,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524_final_mask.png",
+          "sha256": "0a8bd377986373519958b122db63e2af36416b90f539cefbea1fc17f996acf36",
+          "size_bytes": 1112,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_128_jpg.rf.bc6f29251ef07d91a483f29abe13b524_true_mask.png",
+          "sha256": "c32767639b0a84fd570cb9c2e7ac7c6f58fdec7ffdb9138d32c0ac094b38a0b6",
+          "size_bytes": 901,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_04",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683_raw_mask.png",
+          "sha256": "a91f99d04163e52a7d980470d2b465236c64d27c289cb4c05f31c199fafd36cc",
+          "size_bytes": 1049,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683_processed_mask.png",
+          "sha256": "8f7f2204adb8b5cb9338219db0fb5e908f56f11d60fa89b37198d349a07e74d9",
+          "size_bytes": 2445,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683_final_mask.png",
+          "sha256": "e56ceccd84d64707b591e83b5b11ac04c8a72d2d49456eee013bd5495b9ec7ef",
+          "size_bytes": 971,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_142_jpg.rf.606e02e1abfabf13f542f4dd4f8ef683_true_mask.png",
+          "sha256": "884cb34feffd3c70e33878251d416643514ea95c747ceda16301339969e75253",
+          "size_bytes": 925,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_05",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b_raw_mask.png",
+          "sha256": "40d5d37681105c8d1ad78361a0d9b7140f07dedcbab3921a90ac57ad1e3f328b",
+          "size_bytes": 1271,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b_processed_mask.png",
+          "sha256": "b29d36575b698aecbd9bb574bfeb58d3a760f9f45bdc082c3bae80af12ea5b3a",
+          "size_bytes": 1731,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b_final_mask.png",
+          "sha256": "9f78a0edfae96e871d212c83dc0bb17ac0e8903bd6ec3697c1170ff1bc93c5e6",
+          "size_bytes": 1274,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_179_jpg.rf.ade58731f62ccc0576fb16f8f77b639b_true_mask.png",
+          "sha256": "cfb5fdaeb0cd0139c0c6af5f6bea32a3b99df0ae15b652272f8d0e644c137c52",
+          "size_bytes": 1239,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_06",
+      "page_id": "mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2_raw_mask.png",
+          "sha256": "3c0f0f45a2bb18bdb0eb04c31874f03b620afd7c744c4dfdc11a57426c03e785",
+          "size_bytes": 992,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2_processed_mask.png",
+          "sha256": "f78e2b6d5fe9af526866d5ec17fc978c452551fa5ab61b886bef4ef51b9d1186",
+          "size_bytes": 2113,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2_final_mask.png",
+          "sha256": "032a96949a1294aedaa5a02e28b6393714b6f45d371f00a921b6683c52e6b2e0",
+          "size_bytes": 968,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2.png",
+          "local_fixture_rel_path": "manga/mixed_1725384967465-839248b6-97c2-4cca-bcab-6a61033fac8b_39_jpg.rf.84f4dad4f0329e5f5f49bf6587c4a3d2_true_mask.png",
+          "sha256": "87dffb816710a2de92e9367fe68551e20daa48d69b0beb3d9eaac533aa7cc8b6",
+          "size_bytes": 895,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_07",
+      "page_id": "mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3_raw_mask.png",
+          "sha256": "1129a5b06207a5d5370647c93fcb42d6936cba7f22ec3c633416b54a8a997166",
+          "size_bytes": 1069,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3_processed_mask.png",
+          "sha256": "9231b2a48fa10e683275af28822ba7c291fc4d6100d7fa51442280be3471964f",
+          "size_bytes": 3733,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3_final_mask.png",
+          "sha256": "446033e951088fcfefc8a366197ee726ba2a5d19e8cb94fcf421448be963b327",
+          "size_bytes": 947,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_101_jpg.rf.cc37782b44843d895d9a920bcf266ef3_true_mask.png",
+          "sha256": "58890043d2e939a49b7c298f45c53355888052d761559d82a4bff93df8435ff5",
+          "size_bytes": 883,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    },
+    {
+      "fixture_id": "FIX_MANGA_08",
+      "page_id": "mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420",
+      "dataset": "Manga",
+      "dimensions": [
+        448,
+        448
+      ],
+      "copyright_status": "COPYRIGHTED_COMIC_PANEL_RESERVED",
+      "git_tracked": false,
+      "evaluation_ready": true,
+      "behavioral_purpose": "Validates Section 2.3 segregation exact parity (1000 threshold), evaluation matching semantics, and line-analysis comparative delta.",
+      "artifacts": {
+        "input_image": {
+          "legacy_source_path": null,
+          "local_fixture_rel_path": null,
+          "sha256": null,
+          "size_bytes": null,
+          "role": "model_inference_input",
+          "availability": "UNAVAILABLE",
+          "provenance_status": "SOURCE_IMAGE_PATH_NOT_PRESERVED"
+        },
+        "raw_prediction": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/pred_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420_raw_mask.png",
+          "sha256": "0f4c72204d3047d99f3cd79db023be8f5ff4e41eca66c334c50c6ed3f47ba0a1",
+          "size_bytes": 1458,
+          "role": "historical_raw_prediction_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "processed_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/processed_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420_processed_mask.png",
+          "sha256": "bf3832ca566afe6e3dfc59ff06388e202c80624920297984ba753e4bf358fc98",
+          "size_bytes": 2415,
+          "role": "historical_line_analysis_observation",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "final_mask": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/final_mask/pred_mask_raw_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420_final_mask.png",
+          "sha256": "e66654080d77f70e9a7f789b13c8b359d89b372adc38f248e7241ec716f2f4aa",
+          "size_bytes": 1357,
+          "role": "evaluation_and_segregation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_HISTORICAL_RECORD"
+        },
+        "ground_truth": {
+          "legacy_source_path": "comics_analysis/preds/combined_preds/unetpp_combined_pred/true_mask/true_mask_mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420.png",
+          "local_fixture_rel_path": "manga/mixed_1725386091555-6affe8e1-c1be-453c-9c64-9f6a8bb63e99_103_jpg.rf.6d2cbc71f75e4e919cb29983ffa9b420_true_mask.png",
+          "sha256": "2c2e119e637561eaccb4d77a2add5e62128a04ed5c1088292eb035d7c463d803",
+          "size_bytes": 1317,
+          "role": "ground_truth_evaluation_target",
+          "availability": "AVAILABLE",
+          "provenance_status": "VERIFIED_GROUND_TRUTH"
+        }
+      },
+      "associated_parity_tests": [
+                "test_line_analysis_delta",
+        "test_evaluation_parity"
+      ],
+      "notes": "Exact cause of line-analysis historical processed-mask delta remains unresolved. Environment/library differences are possible contributors."
+    }
+  ]
+}

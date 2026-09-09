@@ -1,0 +1,57 @@
+# Behavior Profile: legacy_2024
+# Represents frozen historical implementation contracts from forensic audit.
+# DO NOT alter these values to "improve" performance without user approval.
+
+profile: "legacy_2024"
+
+line_analysis:
+  smooth_kernel_size: [20, 20]
+  smooth_morph_op: "cv2.MORPH_OPEN"
+  smooth_struct_elem: "cv2.MORPH_RECT"
+  canny_thresh1: 50.0
+  canny_thresh2: 100.0
+  bridge_dilate_kernel: [5, 5]
+  bridge_dilate_iters: 2
+  bridge_erode1_kernel: [5, 5]
+  bridge_erode1_iters: 1
+  bridge_erode2_kernel: [3, 3]
+  bridge_erode2_iters: 1
+  hough_rho: 2.0
+  hough_theta_div: 180.0
+  hough_threshold: 25
+  hough_min_line_length: 10.0
+  hough_max_line_gap: 30.0
+  ref_point_ratios:
+    - [0.7142857142857143, 0.5]          # (w * 5/7, l * 0.5)
+    - [0.16666666666666666, 0.857142857] # (w/6, l * 6/7)
+    - [0.3888888888888889, 0.333333333]  # (w * 3.5/9, l / 3)
+  intersection_bound_min: 0
+  intersection_bound_max: 400
+  meanshift_bandwidth_inner: 13.0
+  meanshift_bandwidth_border: 10.0
+  bresenham_color_ratio_thresh: 0.75
+  bresenham_min_distance: 40.0
+  drawn_line_thickness: 3
+
+component_filter:
+  # Size threshold for connected component filtering.
+  # Comparator is strictly greater than (>): components with size > size_threshold are retained;
+  # components with size <= size_threshold (including exactly 1000) are removed.
+  size_threshold: 1000
+  connectivity: 8
+
+evaluation:
+  dice_threshold: 0.9
+  connectivity: 8
+  panel_accuracy_direction: "gt_to_pred"
+  precision_recall_direction: "pred_to_gt"
+  page_accuracy_ignore_false_positives: true
+
+inference:
+  model_checkpoint_rel_path: ".local_artifacts/best_model_unetpp_1.keras"
+  expected_checkpoint_sha256: "a33299794f014c57b2590385f85d189c592117452ab6a93b2552082569eb29c7"
+  input_height: 384
+  input_width: 384
+  input_channels: 3
+  input_color_space: "RGB"
+  embedded_lambda_div_255: true
