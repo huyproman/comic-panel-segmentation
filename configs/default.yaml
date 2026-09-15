@@ -1,0 +1,53 @@
+profile: default
+
+preprocessing:
+  canny_low: 50
+  canny_high: 100
+  opening_kernel_size: [20, 20]
+  bridge_dilate_size: [5, 5]
+  bridge_erode1_size: [5, 5]
+  bridge_erode2_size: [3, 3]
+
+hough:
+  rho: 2
+  theta_divisor: 180
+  threshold: 25
+  min_line_length: 10
+  max_line_gap: 30
+
+line_grouping:
+  min_angle: 0.0
+  max_angle: 180.0
+  angle_step: 1.0
+  reference_geometry: [384, 384]
+
+intersections:
+  cluster_bandwidth_inner: 13.0
+  cluster_bandwidth_border: 10.0
+  coord_clip_min: 0.0
+  coord_clip_max: 400.0
+
+line_verification:
+  edge_support_threshold: 0.75
+  min_line_length_euclidean: 40.0
+  line_thickness: 3
+  line_color: 0
+
+component_filtering:
+  min_component_size: 1000
+
+inference:
+  input_height: 448
+  input_width: 448
+  input_channels: 3
+  threshold: 0.5
+  raw_only: false
+
+training:
+  epochs: 150
+  batch_size: 8
+  learning_rate: 0.0001
+  warmup_epochs: 5
+  weight_decay: 0.0001
+  output_dir: runs/train
+  dataset_dir: null
